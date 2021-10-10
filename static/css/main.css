@@ -1,0 +1,117 @@
+body {
+	background: linear-gradient(-45deg, #993719, #850737, #06526d, #046d54);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+h1,h2,h3{
+    color: rgba(255, 255, 255, 0.774);
+    font-family: 'Lato';
+}
+
+a{
+    color: rgba(0, 255, 255, 0.699);
+    text-decoration: none;
+line-height: 2rem;
+}
+
+ div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+
+table {
+    width: 80%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: "Lato" !important;
+  font-size: larger;
+  text-align: center;
+  border-radius: 4px;
+}
+
+th,
+td {
+  height: 2rem;
+  padding: 15px;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  color: #fff;
+}
+
+td{
+  color: rgb(204, 203, 203);
+}
+
+th {
+  text-align: center;
+  font-size: larger;
+}
+
+thead th {
+  background-color: #55608f;
+}
+
+tbody tr :hover {
+  background-color: rgba(255, 255, 255, 0.144);
+  transition: all 0.2s ease-in;
+  border-radius: 2px;
+}
+
+td :hover ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.062);
+  z-index: -1;
+}
+
+.cont{
+    margin-top: 2rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    height: 40px;
+    font-size: larger;
+    color: white;
+}
+
+.cont::placeholder{
+    color: rgba(245, 222, 179, 0.26);
+}
+
+.cont:focus{
+   outline: 1px solid rgba(204, 203, 203, 0.24);
+}
+
+
+.butt{
+    margin-top: 1rem;
+    position: relative;
+    left: 130px;
+    height: 50px;
+    width: 100px;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: #09f7bf93;
+    color: rgba(0, 0, 0, 0.568);
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: large;
+}
+
+.butt:hover{
+   background-color: #09f7c0de;
+   box-shadow: #046d54;
+   transition: all 0.15s ease-in;
+}
