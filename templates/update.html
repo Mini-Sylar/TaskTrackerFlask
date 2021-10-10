@@ -7,7 +7,7 @@
 
 {% block body%}
 <div class="content">
-    <h1>Update Your task</h1>
+    <h1>Update Task</h1>
 
     <form action="/update/{{task.id}}" method="POST" onsubmit="return ValidateForm();">
         <input type="text" name="content" id="content" value="{{task.content}}" class="cont">
